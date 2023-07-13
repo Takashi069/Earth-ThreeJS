@@ -20,11 +20,8 @@ main{
 	position: relative;
   display: block;
 	top: 2em;
-  
   width: 40%;
-  
   font-size: 2em;
-
 	animation-duration: 20s;
 	animation-timing-function: ease-in-out;
 	animation-iteration-count: infinite;
@@ -59,3 +56,4 @@ main{
   74.96%, 91.62% { left: 25%; opacity: 1; }
   100% { left: 110%; opacity: 0; }
 }
+/* The animation was taken from the following codepen: https://codepen.io/nucliweb/pen/OJXYwm */
