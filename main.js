@@ -50,7 +50,7 @@ function addStar(){
 }
 //-----------------------------------
 //Earth
-const earthTexture = new THREE.TextureLoader().load('/assets/earth.jpg')
+const earthTexture = new THREE.TextureLoader().load('./assets/earth.jpg')
 const geometryEarth = new THREE.SphereGeometry(10,24,24)
 const materialEarth = new THREE.MeshStandardMaterial({map:earthTexture})
 const earth = new THREE.Mesh(geometryEarth,materialEarth)
@@ -58,7 +58,7 @@ const earth = new THREE.Mesh(geometryEarth,materialEarth)
 // earth.position.set(10,10,-50)
 // scene.background = spaceTexture --> add it if you want to
 //Moon-------------------------------
-const moonTexture = new THREE.TextureLoader().load('/assets/moon.jpg')
+const moonTexture = new THREE.TextureLoader().load('./assets/moon.jpg')
 const geometryMoon = new THREE.SphereGeometry(5,24,24)
 const materialMoon = new THREE.MeshStandardMaterial({map:moonTexture})
 const moon = new THREE.Mesh(geometryMoon,materialMoon)
@@ -71,7 +71,7 @@ scene.add(earth)
 //fill in the stars: 
 Array(250).fill().forEach(addStar)
 //load texture for the background
-const spaceTexture = new THREE.TextureLoader().load("/assets/space-texture.jpg")
+const spaceTexture = new THREE.TextureLoader().load("./assets/space-texture.jpg")
 
 function animate(){
     requestAnimationFrame(animate);
